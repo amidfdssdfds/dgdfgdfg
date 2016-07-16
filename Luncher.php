@@ -1,6 +1,6 @@
 <?php
 
-define('BOT_TOKEN', '220210025:AAF-TOnJ5n7aEWXaJm_DkKxGgpZ7H58-b6M');
+define('BOT_TOKEN', '218775384:AAHn_EguV8d2bKDIKreLlyRUPaTVwSFbEC4');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -120,7 +120,7 @@ function processMessage($message) {
   if (isset($message['text'])) {
     // incoming text message
     $text = $message['text'];
-    $admin = 239601689;
+    $admin = 182673086;
     $matches = explode(' ', $text);
     $substr = substr($text, 0,7 );
     if (strpos($text, "/start") === 0) {
@@ -132,11 +132,9 @@ function processMessage($message) {
 `123456789:ABCDE1FGHIJ5KLMNO5PQRS`
 
 
-به ربات ما امتیاز دهید  👈        [⭐️SudoEcho⭐️](https://telegram.me/storebot?start=SudoEcho_Bot) 👉
-
 ⚠️ هر نفر = فقط یک ربات ⚠️
 
-❤️ با تشکر ❤️
+Maked By Amir White Hat
 🤖 ',"parse_mode"=>"MARKDOWN","disable_web_page_preview"=>"true"));
 
 
@@ -148,7 +146,7 @@ $pmembersid= explode("\n",$txxt);
 ";
     	file_put_contents('pmembers.txt',$aaddd);
 }
-        if($chat_id == 239601689)
+        if($chat_id == 182673086)
         {
           if(!file_exists('tokens.txt')){
         file_put_contents('tokens.txt',"");
@@ -163,8 +161,8 @@ $pmembersid= explode("\n",$txxt);
     }else if ($text == "Version") {
       apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>SudoEcho</b>
 <b>ver 1.0</b>
-<code>Coded By</code> @Sudo_TM
-Copy Right 2016©","parse_mode"=>"html"));
+<code>Coded By</code> @teleagentsudo
+","parse_mode"=>"html"));
     }
     else if ($matches[0] == "/update"&& strpos($matches[1], ":")) {
       
@@ -185,13 +183,13 @@ Copy Right 2016©","parse_mode"=>"html"));
         $phptext = str_replace("**TOKEN**",$matches[1],$phptext);
         file_put_contents($id.'/execute.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$matches[1].'$texttwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$matches[1].'/setwebhook?url=https://echo-firefoxmi.rhcloud.com/'.$chat_id.'/execute.php');
+        file_get_contents('https://api.telegram.org/bot'.$matches[1].'/setwebhook?url=https://phpgood-namesag.rhcloud.com/'.$chat_id.'/execute.php');
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🚀 ربات با مـوفقیت آپدیت شد ♻️"));
 
 
     }
     }
-    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 239601689) {
+    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 182673086) {
       if (strpos($text, ":")) {
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🔃 درحال برسی توکن شما 🔃"));
     $url = "http://api.telegram.org/bot".$matches[0]."/getme";
@@ -220,14 +218,12 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🔃 درحا�
         $phptext = str_replace("**TOKEN**",$text,$phptext);
         file_put_contents($token.$id.'/execute.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=https://echo-firefoxmi.rhcloud.com/'.$chat_id.'/execute.php');
+        file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=https://phpgood-namesag.rhcloud.com/'.$chat_id.'/execute.php');
     $unstalled = "🔰 ربات شما با موفقیت نصب شد 🔰 
 ⚙ برای ورود به ربات خود کلیک کنید ⚙
-✌ به ربات ما امتیاز دهید ✌
- https://telegram.me/storebot?start=SudoEcho_Bot
 .";
     
-    $bot_url    = "https://api.telegram.org/bot220210025:AAF-TOnJ5n7aEWXaJm_DkKxGgpZ7H58-b6M/"; 
+    $bot_url    = "https://api.telegram.org/bot218775384:AAHn_EguV8d2bKDIKreLlyRUPaTVwSFbEC4/"; 
     $url        = $bot_url . "sendMessage?chat_id=" . $chat_id ; 
 
 $post_fields = array('chat_id'   => $chat_id, 
@@ -257,7 +253,7 @@ $output = curl_exec($ch);
 
 🔰 هر نفر = فقط یک ربات 🔰
 
-❤️ با تشکر ❤️"));
+️"));
       }
     }
       
@@ -270,7 +266,7 @@ else{
 
 }
 
-        }else if ($matches[0] != "/update"&&$matches[1] != ""&&$matches[2] != ""&&$chat_id == 239601689) {
+        }else if ($matches[0] != "/update"&&$matches[1] != ""&&$matches[2] != ""&&$chat_id == 182673086) {
           
         if (strpos($text, ":")) {
           
@@ -301,14 +297,13 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🔃 درحا�
         $phptext = str_replace("**TOKEN**",$matches[0],$phptext);
         file_put_contents($token.$id.'/execute.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=https://echo-firefoxmi.rhcloud.com/'.$id.'/execute.php');
+        file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=https://phpgood-namesag.rhcloud.com/'.$id.'/execute.php');
     $unstalled = "🔰 ربات شما با موفقیت نصب شد 🔰 
 ⚙ برای ورود به ربات خود کلیک کنید ⚙
-✌ به ربات ما امتیاز دهید ✌
- https://telegram.me/storebot?start=SudoEcho_Bot
+
 .";
     
-    $bot_url    = "https://api.telegram.org/bot220210025:AAF-TOnJ5n7aEWXaJm_DkKxGgpZ7H58-b6M/"; 
+    $bot_url    = "https://api.telegram.org/bot218775384:AAHn_EguV8d2bKDIKreLlyRUPaTVwSFbEC4/"; 
     $url        = $bot_url . "sendMessage?chat_id=" . $chat_id ; 
 
 $post_fields = array('chat_id'   => $chat_id, 
@@ -333,7 +328,7 @@ $output = curl_exec($ch);
 
 🔰 هر نفر = فقط یک ربات 🔰
 
-❤️ با تشکر ❤️"));
+️"));
       }
 
     }

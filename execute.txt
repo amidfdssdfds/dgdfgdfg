@@ -8,6 +8,7 @@ function apiRequestWebhook($method, $parameters) {
     return false;
   }
 
+
   if (!$parameters) {
     $parameters = array();
   } else if (!is_array($parameters)) {
